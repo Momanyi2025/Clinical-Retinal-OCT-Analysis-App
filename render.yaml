@@ -1,33 +1,9 @@
-pythonVersion: 3.12.6
 services:
   - type: web
-    name: retinal-oct-analyzer
+    name: my-app
     env: python
-    runtime: python
-    plan: free
-    branch: main
-    buildCommand: |
-      pip install --upgrade pip setuptools wheel
-      pip install -r requirements.txt
-    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
     pythonVersion: 3.12.6
-
-    # Health check to confirm the app responds
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
     healthCheckPath: /
-    healthCheckTimeoutSeconds: 100
-
-    # Run before each deploy
-    preDeployCommand: |
-      echo "Running pre-deploy tasks..."
-      pip install --upgrade pip setuptools wheel
-      echo "Pre-deploy complete ✅"
-
-    envVars:
-      - key: PYTHONUNBUFFERED
-        value: "1"
-      - key: STREAMLIT_SERVER_HEADLESS
-        value: "true"
-      - key: STREAMLIT_SERVER_ENABLECORS
-        value: "false"
-      - key: STREAMLIT_SERVER_PORT
-        value: $PORT
