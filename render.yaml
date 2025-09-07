@@ -1,9 +1,1 @@
-services:
-  - type: web
-    name: my-app
-    env: python
-    pythonVersion: 3.12.6
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    plan: free
-    healthCheckPath: /
+pythonVersion: 3.12.6
