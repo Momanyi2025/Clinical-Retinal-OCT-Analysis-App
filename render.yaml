@@ -1,3 +1,4 @@
+pythonVersion: 3.12.6
 services:
   - type: web
     name: retinal-oct-analyzer
