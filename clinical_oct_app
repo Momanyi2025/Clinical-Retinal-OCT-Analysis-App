@@ -1,1 +1,8 @@
-streamlit run clinical_oct_app.py
+pip>=25.2
+streamlit==1.38.0
+numpy
+matplotlib
+pillow
+opencv-python-headless
+pandas
+
