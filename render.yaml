@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: retinal-oct-analyzer
+    env: python
+    plan: free  # change to 'starter' or higher if you need more resources
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run your_file_name.py --server.port $PORT --server.address 0.0.0.0
+    autoDeploy: true
