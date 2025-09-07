@@ -1,3 +1,6 @@
+pip>=25.2
+setuptools>=70.0.0
+wheel>=0.44.0
 # Ensure pip is always up-to-date
 pip>=25.2
 
