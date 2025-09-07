@@ -1,20 +1,10 @@
 pip>=25.2
 setuptools>=70.0.0
 wheel>=0.44.0
-# Ensure pip is always up-to-date
-pip>=25.2
 
-# Core framework
-streamlit==1.38.0
-
-# Scientific libraries
+streamlit==1.37.1
 numpy==1.26.4
-matplotlib==3.9.2
 pandas==2.2.2
-
-# Image processing
-pillow==10.4.0
-opencv-python-headless==4.10.0.84
-
-# Date/time utilities
-python-dateutil==2.9.0.post0
+matplotlib==3.8.4
+Pillow==10.3.0
+opencv-python-headless==4.9.0.80
