@@ -1,5 +1,4 @@
-git add runtime.txt
-git commit -m "Set Python version to 3.11.9"
+git add runtime.txt requirements.txt
+git commit -m "Force Python 3.11 for numpy compatibility"
 git push
-pip-compile requirements.in
-gunicorn server:app
+
