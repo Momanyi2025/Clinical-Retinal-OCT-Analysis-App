@@ -1,4 +1,5 @@
-git add requirements.txt runtime.txt Procfile
-git commit -m "Fix Streamlit deploy on Railway"
+git add requirements.txt
+git commit -m "Add matplotlib to requirements"
 git push
+
 
