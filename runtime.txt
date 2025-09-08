@@ -1,2 +1,7 @@
-python-3.11.9
+streamlit==1.37.1
+numpy==1.26.4
+pip>=25.1.1
+setuptools>=65.5.0
+wheel
+
 
