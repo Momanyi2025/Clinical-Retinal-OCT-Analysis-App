@@ -1,1 +1,4 @@
-streamlit run oct_analyzer.py --server.port=$PORT --server.address=0.0.0.0
+git add requirements.txt runtime.txt Procfile
+git commit -m "Fix Streamlit deploy on Railway"
+git push
+
