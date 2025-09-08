@@ -1,4 +1,1 @@
-git add Procfile
-git commit -m "Add Procfile for Railway deployment"
-git push
-
+streamlit run oct_analyzer.py --server.port=$PORT --server.address=0.0.0.0
