@@ -384,6 +384,6 @@ with tab3:
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #6c757d;">
-    <p>Retinal OCT Analyzer Pro v2.1 | For clinical use only | © 2023 Ophthalmology Analytics Inc.</p>
+    <p>Retinal OCT Analyzer Pro v2.1 | For clinical use only | © 2023 Nyameri Ophthalmology Analytics </p>
 </div>
 """, unsafe_allow_html=True)
